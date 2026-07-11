@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 1 | Interactive Creative Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Development Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAVBAR COMPONENT -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Group<span>1</span>.</a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link-item active">Home</a></li>
+          <li><a href="#about" class="nav-link-item">About</a></li>
+          <li><a href="#skills" class="nav-link-item">Skills</a></li>
+          <li><a href="#projects" class="nav-link-item">Projects</a></li>
+          <li><a href="#contact" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+
+        <button id="menuToggle" class="hamburger" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">Available for Elite Projects</span>
+        <h1>Engineering Scalable Digital <span class="text-gradient">Experiences</span></h1>
+        <p>We are Group 1. A collective of passionate frontend developers specialized in crafting high-performance, accessible, and user-centric web applications.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Our Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image-side">
+          <div class="image-frame">
+            <!-- Linked Team Vector Graphic inside your images folder -->
+            <img src="images/hero-illustration.svg" alt="Group 1 Digital Workspace Team" class="about-img">
+          </div>
+        </div>
+        <div class="about-text-side">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">Driven by Quality, Guided by Performance</h2>
+          <p>Formed within the elite BeTechified Frontend Development cohort, group 1 combines unique visual sensibilities with clean, structured architecture rules. We don't just build layouts—we design semantic applications optimized for all viewport limits.</p>
+          <blockquote class="about-quote">
+            "Design is not just what it looks like and feels like. Design is how it works."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION (With Beautiful Visual Icons) -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="text-center">
+        <span class="section-subtitle">Expertise</span>
+        <h2 class="section-title">Technical Competency Metric</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-title-block">
+              <i data-lucide="code-2" class="skill-icon text-accent"></i>
+              <span class="skill-name">Semantic HTML5 & Accessibility</span>
+            </div>
+            <span class="skill-percentage">95%</span>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-title-block">
+              <i data-lucide="layout" class="skill-icon text-accent"></i>
+              <span class="skill-name">Advanced CSS Grid & Flexbox</span>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-title-block">
+              <i data-lucide="terminal" class="skill-icon text-accent"></i>
+              <span class="skill-name">JavaScript Core Engine Mechanics</span>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-title-block">
+              <i data-lucide="smartphone" class="skill-icon text-accent"></i>
+              <span class="skill-name">Responsive Cross-Viewport Design</span>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (Linked to images folder cards) -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="text-center">
+        <span class="section-subtitle">Our Work</span>
+        <h2 class="section-title">Featured Applications</h2>
+      </div>
+
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="core">Core UI</button>
+        <button class="filter-btn" data-filter="apps">Web Apps</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project Card 1 -->
+        <article class="project-card" data-category="core">
+          <div class="project-img-wrapper">
+            <img src="images/project-medium.jpg" alt="Medium Clone Preview Screen" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Core UI</span>
+            <h3>Medium Landing Page Replica</h3>
+            <p>A fully semantic, pixel-perfect clone of the Medium landing page layout emphasizing custom typography hierarchies.</p>
+            <a href="#" class="project-link">Explore Case Study &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card" data-category="apps">
+          <div class="project-img-wrapper">
+            <img src="images/project-dashboard.jpg" alt="Data Analytics Dashboard UI" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web Apps</span>
+            <h3>Multi-API Async Dashboard</h3>
+            <p>An interactive data visualizer fetching concurrent streams using JavaScript Promise chains and structural async managers.</p>
+            <a href="#" class="project-link">Explore Case Study &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card" data-category="core">
+          <div class="project-img-wrapper">
+            <img src="images/project-bootstrap.jpg" alt="Bootstrap Layout Blueprint" class="project-img">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Core UI</span>
+            <h3>Enterprise Product Hub</h3>
+            <p>A sleek corporate grid system landing experience deployed with modular fluid containers and strict responsive breaks.</p>
+            <a href="#" class="project-link">Explore Case Study &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="contact-card">
+        <div class="text-center">
+          <span class="section-subtitle">Inquiries</span>
+          <h2 class="section-title">Initiate a Collaboration</h2>
+          <p>Drop us a line! Our live-validated communication engine will catch your telemetry data instantly.</p>
+        </div>
+
+        <form id="portfolioContactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientName">Full Name</label>
+              <input type="text" id="clientName" placeholder="e.g., Jane Doe" required>
+              <span class="error-msg" id="nameError">Name field cannot be left blank</span>
+            </div>
+            <div class="form-group">
+              <label for="clientEmail">Email Address</label>
+              <input type="email" id="clientEmail" placeholder="username@example.com" required>
+              <span class="error-msg" id="emailError">Please input a valid email formatting array</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="clientMessage">Project Outline</label>
+            <textarea id="clientMessage" rows="5" placeholder="Detail your project specifications here..." required></textarea>
+            <span class="error-msg" id="messageError">Please supply outline requirements details</span>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-wide">Dispatch Message</button>
+          </div>
+        </form>
+        <div id="formSuccessMessage" class="success-banner">⚡ Transmission Secured! Group 3B will contact you shortly.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">&copy; 2026 BeTechified Group 3B Project Hub. Handcrafted using premium Vanilla web core patterns.</p>
+      <div class="footer-sub-links">
+        <a href="#hero">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
