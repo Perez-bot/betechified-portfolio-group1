@@ -545,8 +545,13 @@ body:not([data-theme="dark"]) .moon-icon { display: block; }
   align-items: center;
   font-size: 13px;
   color: var(--text-muted);
+  flex-direction: column;
 }
 
+.Socials {
+  gap: 20px;
+  justify-content: space-between;
+}
 /* --- ADAPTIVE RESPONSIVE DESIGN VIEWPORT LAYOUTS --- */
 @media (max-width: 992px) {
   .hero h1 { font-size: 52px; }
