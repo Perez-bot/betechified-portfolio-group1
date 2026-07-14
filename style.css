@@ -202,7 +202,7 @@ ul {
 /* Theme Toggle button mechanics */
 .theme-btn {
   background: none;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--primary);
   color: var(--primary);
   width: 40px;
   height: 40px;
@@ -216,8 +216,8 @@ ul {
 .theme-btn svg { width: 18px; height: 18px; }
 [data-theme="dark"] .sun-icon { display: block; }
 [data-theme="dark"] .moon-icon { display: none; }
-body:not([data-theme="dark"]) .sun-icon { display: none; }
-body:not([data-theme="dark"]) .moon-icon { display: block; }
+html:not([data-theme="dark"]) .sun-icon { display: none; }
+html:not([data-theme="dark"]) .moon-icon { display: block; }
 
 /* Responsive Burger layout */
 .hamburger {

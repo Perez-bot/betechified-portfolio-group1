@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Apply cache configurations initialization
   document.documentElement.setAttribute('data-theme', currentTheme);
+  lucide.createIcons(); 
 
   themeToggle.addEventListener('click', () => {
     let theme = document.documentElement.getAttribute('data-theme');
