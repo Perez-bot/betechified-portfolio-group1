@@ -551,6 +551,10 @@ body:not([data-theme="dark"]) .moon-icon { display: block; }
 .Socials {
   gap: 20px;
   justify-content: space-between;
+  font-weight: bolder;
+  color: #1C804B;
+  border-color: brown;
+
 }
 /* --- ADAPTIVE RESPONSIVE DESIGN VIEWPORT LAYOUTS --- */
 @media (max-width: 992px) {
@@ -631,3 +635,4 @@ body:not([data-theme="dark"]) .moon-icon { display: block; }
 .project-card:hover .project-img {
   transform: scale(1.05); /* Smooth micro-animation on hover */
 }
+
