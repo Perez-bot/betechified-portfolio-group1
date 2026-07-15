@@ -28,6 +28,36 @@
   --border-color: #2A2A2E;
 }
 
+/* --- CSS VARIABLE DESIGN TOKENS --- */
+:root {
+  --bg-main: #FBF9FF;
+  --bg-surface: #FFFFFF;
+  --card-bg: #F3EFFC;
+  --text-main: #1A1523;
+  --text-muted: #6B6478;
+  --primary: #6C4FF5;
+  --primary-light: #8B75F8;
+  --accent: #FF7A50;
+  --border-color: #E6E1F5;
+  --error: #D93838;
+  --success: #1C804B;
+  --nav-height: 80px;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- DARK THEME VARIANT VALUES --- */
+[data-theme="dark"] {
+  --bg-main: #14111F;
+  --bg-surface: #1C1830;
+  --card-bg: #241F3A;
+  --text-main: #F5F3FA;
+  --text-muted: #A79FC0;
+  --primary: #9A85FA;
+  --primary-light: #B4A3FC;
+  --accent: #FF9270;
+  --border-color: #322C4C;
+}
+
 /* --- GLOBAL RESET & ARCHITECTURE BASE --- */
 * {
   box-sizing: border-box;
@@ -134,7 +164,7 @@ ul {
   left: 0;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(var(--bg-main), 0.85);
+  background-color: color-mix(in srgb, var(--bg-main) 85%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -244,8 +274,7 @@ body:not([data-theme="dark"]) .moon-icon { display: block; }
   padding-top: calc(var(--nav-height) + 40px);
   display: flex;
   align-items: center;
-  margin: top 3px;
-  box-shadow: #F3F3F1;
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 60%);
 }
 
 .hero-container {
