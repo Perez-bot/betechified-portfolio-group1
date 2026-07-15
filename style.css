@@ -556,6 +556,17 @@ body:not([data-theme="dark"]) .moon-icon { display: block; }
   border-color: brown;
 
 }
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.social-links {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
 /* --- ADAPTIVE RESPONSIVE DESIGN VIEWPORT LAYOUTS --- */
 @media (max-width: 992px) {
   .hero h1 { font-size: 52px; }
