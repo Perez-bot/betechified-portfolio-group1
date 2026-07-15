@@ -75,6 +75,41 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  // --- MODULE 3B: SCROLL-TRIGGERED REVEAL ANIMATIONS ---
+  const revealElements = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && revealElements.length) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+
+          // If this reveal target contains a progress bar, fill it now
+          const bar = entry.target.querySelector('.progress-bar');
+          if (bar) {
+            const target = bar.getAttribute('data-percent') || 0;
+            requestAnimationFrame(() => { bar.style.width = target + '%'; });
+          }
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    // Fallback: no IO support, just show everything and fill bars instantly
+    revealElements.forEach(el => {
+      el.classList.add('in-view');
+      const bar = el.querySelector('.progress-bar');
+      if (bar) bar.style.width = (bar.getAttribute('data-percent') || 0) + '%';
+    });
+  }
+
+
   // --- MODULE 4: LIVE ACCESSIBLE CONTACT FORM VALIDATION ---
   const form = document.getElementById('portfolioContactForm');
   const nameInput = document.getElementById('clientName');
@@ -118,4 +153,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
